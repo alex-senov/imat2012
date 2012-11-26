@@ -7,9 +7,9 @@ package main;
  * Time: 20:50
  */
 public class SessionsSubtract {
-    public static final String DEFAULT_OUTPUT = "/media/2A306A0F3069E275/study/intmat2012/test_sessions.txt";
+    public static final String DEFAULT_OUTPUT = "/media/2A306A0F3069E275/study/intmat2012/train_sessions.txt";
     public static void main(String[] args) throws Exception {
-        String inFilePath = (args.length < 1) ? Main.DEFAULT_IN_FILE_PATH : args[0];
+        String inFilePath = (args.length < 1) ? Main.TRAIN_DEFAULT_IN_FILE_PATH : args[0];
         String outFilePath = (args.length < 2) ? DEFAULT_OUTPUT : args[2];
 
         Reader reader = new Reader(inFilePath);

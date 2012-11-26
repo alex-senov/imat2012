@@ -4,6 +4,9 @@ import main.Meta;
 import main.Session;
 import main.Variable;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Alexander Senov
@@ -12,7 +15,7 @@ import main.Variable;
  */
 public class UserId implements Variable {
     @Override
-    public double make(Session session) {
-        return ((Meta)session.getRecords().get(0)).getUserId();
+    public List<Double> make(Session session) {
+        return Arrays.asList((double) ((Meta) session.getRecords().get(0)).getUserId());
     }
 }

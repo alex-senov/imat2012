@@ -17,16 +17,15 @@ public class VariablesMaker {
     public static List<Variable> variables = Arrays.asList(
             new main.variables.Switch(),
             new UserId(),
-            new MaxTime(),
-            new ClickCount(),
-            new QueriesCount(),
-            new TimeTotal()
+            new QueriesClicks(),
+            new Evolution(),
+            new Time()
     );
     
     public static List<Double> makeVariables(Session session) {
         List<Double> result = new ArrayList<>(variables.size());
         for (Variable v : variables) {
-            result.add(v.make(session));
+            result.addAll(v.make(session));
         }
         return result;
     }

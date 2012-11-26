@@ -4,6 +4,9 @@ import main.Meta;
 import main.Session;
 import main.Variable;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Alexander Senov
@@ -12,10 +15,11 @@ import main.Variable;
  */
 public class Switch implements Variable {
     @Override
-    public double make(Session session) {
+    public List<Double> make(Session session) {
+        double result = 1.;
         if (!((Meta)session.getRecords().get(0)).getSwitchType().equals(Meta.SwitchType.N)) {
-            return 0;
+            result = 0;
         }
-        return 1;
+        return Arrays.asList(result);
     }
 }

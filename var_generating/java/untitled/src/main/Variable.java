@@ -1,5 +1,7 @@
 package main;
 
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Alexander Senov
@@ -7,5 +9,5 @@ package main;
  * Time: 1:21
  */
 public interface Variable {
-    double make(Session session);
+    List<Double> make(Session session);
 }
