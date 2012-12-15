@@ -140,7 +140,7 @@ procSession <- function(id) {
   return (result)
 }
 
-userSessionMerge<- function(id) {
+userSessionMerge <- function(id) {
   print(id)
   
   userProb <- NA
