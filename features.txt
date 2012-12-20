@@ -1,0 +1,40 @@
+Terms:
+  Q - query
+  C - click
+  S - switch
+  D - document
+  D1...D10 - ten documents on SERP
+
+Features:
+  Implemented:
+	1. session time
+	2. number of Q
+	3. number of C
+	4. mean time between C and C
+	5. max time between C and C
+	6. mean time between Q and C
+        7. max time between Q and C
+        8. min time between Q and C
+        9. min time between C and C
+	10. number of S
+	11. ?? ratio of Q without any C (for user?? or for session?)
+	12. mean session time for user
+	13. ?? Number_of_QCC_groups
+	14. ?? Mean_Time_QCS
+	15. ?? Max_Time_QCS
+	
+
+  Candidates:
+	1. highest D clicked (1 to 10)
+	2. lowest D clicked
+	3. number (or ratio) of D double-clicked (clicked > 1 time)
+	4. somehow calculate intersection between documents in different Queries 
+	(if user change query a little than query result would change a little too)
+	5. all features could be calculated for user to:
+		mean number of Q for user
+		mean min time between Q and C for user
+		max mean session time for user
+		....
+
+
+
